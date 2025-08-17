@@ -18,12 +18,12 @@ body {
     position: sticky;
     top: 0;
     z-index: 999;
-    width: 100%;
-}
+    margin-left: -80%;
+  }
 
 .header-container {
     background-color: #fffc35;
-    width: 90%;
+    width: 8%;
     max-width: 1200px;
     border-radius: 10px;
     padding: 10px 15px;
@@ -101,7 +101,7 @@ body {
 }
 
 .hero-section {
-    background-color: #fff;
+    background-color: #6bb6d1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -452,6 +452,10 @@ body {
     margin: 10px 0;
 }
 
+#hh4 {
+  font-size: small;
+}
+
 .css {
     width: 100%;
     padding: 0 15px;
@@ -671,15 +675,10 @@ body {
     margin-top: 20px;
 }
 
-/* Updated Media Queries Section */
-
-/* Base styles (mobile first) are already well defined in your existing CSS */
-
-/* Small devices (landscape phones, 576px and up) */
+/* Media Queries */
 @media (min-width: 576px) {
     .hero-title {
         font-size: 2.5rem;
-        line-height: 1.1;
     }
     
     .hero-subtitle {
@@ -687,27 +686,21 @@ body {
     }
     
     .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8 {
-        font-size: 2rem;
-        padding: 12px;
+        font-size: 2.2rem;
     }
     
     .Animated {
-        width: 180px;
+        width: 200px;
     }
     
-    .header-container {
-        padding: 10px 20px;
+    .haha, .hehe, .smart2, .testimonials-title {
+        font-size: 2rem;
     }
     
-    .nav-links {
-        gap: 20px;
+    .intro-text, .p1 {
+        font-size: 1.1rem;
     }
     
-    .apply-button {
-        padding: 10px 22px;
-    }
-    
-    /* Adjust card layouts */
     .section1, .section2 {
         flex-direction: row;
         flex-wrap: wrap;
@@ -715,31 +708,58 @@ body {
     }
     
     .card1, .card2, .card3, .card4 {
-        width: 48%;
-        margin: 1%;
+        width: 45%;
     }
     
-    /* Center align text on larger mobile */
-    .haha, .hehe, .smart2, .testimonials-title {
-        font-size: 2rem;
-        text-align: center;
+    .crds {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .crd1, .crd2, .crd3 {
+        width: 45%;
+    }
+    
+    .cd, .cd2 {
+        max-width: 450px;
+    }
+    
+    .process-title {
+        font-size: 1.5rem;
+    }
+    
+    .spn {
+        font-size: 1rem;
+    }
+    
+    .Comments {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .comment, .coment, .coent, .cont, .cot, .ct, .t, .c, .o {
+        width: 45%;
     }
 }
 
-/* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    /* Hide mobile menu toggle and show regular nav */
+    .header-container {
+        padding: 10px 25px;
+    }
+    
     .mobile-menu-toggle {
         display: none;
     }
     
     .nav-links {
-        display: flex;
+        gap: 25px;
+        font-size: 1.1rem;
     }
     
-    /* Hero section adjustments */
-    .hero-section {
-        padding: 80px 20px;
+    .apply-button {
+        padding: 12px 25px;
+        font-size: 1rem;
     }
     
     .hero-title {
@@ -750,20 +770,22 @@ body {
         font-size: 1.2rem;
     }
     
-    /* Animation section */
-    .card0 {
-        height: 250px;
-    }
-    
     .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8 {
-        font-size: 2.2rem;
+        font-size: 2.5rem;
     }
     
     .Animated {
-        width: 220px;
+        width: 250px;
     }
     
-    /* Feature cards */
+    .haha, .hehe, .smart2, .testimonials-title {
+        font-size: 2.5rem;
+    }
+    
+    .section1, .section2 {
+        justify-content: space-between;
+    }
+    
     .card1, .card4 {
         width: 60%;
     }
@@ -772,38 +794,26 @@ body {
         width: 35%;
     }
     
-    /* Benefit cards */
     .crds {
-        flex-direction: row;
         justify-content: space-between;
     }
     
     .crd1, .crd2, .crd3 {
-        width: 32%;
-    }
-    
-    /* Process steps */
-    .smrt, .smrtss {
-        padding: 40px 20px;
+        width: 30%;
     }
     
     .cd, .cd2 {
-        max-width: 400px;
+        max-width: 350px;
     }
     
-    /* Testimonials */
-    .Comments {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    .process-title {
+        font-size: 1.8rem;
     }
     
     .comment, .coment, .coent, .cont, .cot, .ct, .t, .c, .o {
-        width: 48%;
-        margin-bottom: 20px;
+        width: 30%;
     }
     
-    /* Footer transition */
     .footer-transition {
         flex-direction: row;
         justify-content: center;
@@ -811,178 +821,96 @@ body {
         gap: 30px;
     }
     
-    .hero-illustration, .container1 {
+    .hero-illustration {
+        width: 45%;
+        height: 400px;
+    }
+    
+    .container1 {
         width: 45%;
         height: 400px;
     }
 }
 
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .header-container {
         max-width: 1200px;
-    }
-    
-    .hero-section {
-        padding: 100px 0;
     }
     
     .hero-title {
         font-size: 3.5rem;
     }
     
-    .hero-subtitle {
-        font-size: 1.3rem;
-    }
-    
-    /* Animation section */
-    .card0 {
-        max-width: 1000px;
-        height: 300px;
-        margin: 40px auto;
-    }
-    
     .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8 {
-        font-size: 2.8rem;
-    }
-    
-    .Animated {
-        width: 280px;
-    }
-    
-    /* Feature cards */
-    .card1, .card4 {
-        width: 500px;
-    }
-    
-    .card2, .card3 {
-        width: 380px;
-    }
-    
-    /* Process steps */
-    .cd, .cd2 {
-        max-width: 450px;
-        min-height: 400px;
-    }
-    
-    /* Testimonials */
-    .comment, .coment, .coent, .cont, .cot, .ct, .t, .c, .o {
-        width: 30%;
-    }
-    
-    /* Footer transition */
-    .hero-illustration {
-        width: 500px;
-        height: 450px;
-    }
-    
-    .container1 {
-        width: 500px;
-        height: 420px;
-    }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .hero-title {
-        font-size: 4rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.4rem;
-    }
-    
-    /* Animation section */
-    .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8 {
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
     
     .Animated {
         width: 300px;
     }
     
-    /* Feature cards */
+    .haha, .hehe, .smart2, .testimonials-title {
+        font-size: 3rem;
+    }
+    
+    .card0 {
+        height: 300px;
+    }
+    
     .card1, .card4 {
-        width: 550px;
+        width: 500px;
     }
     
     .card2, .card3 {
-        width: 400px;
+        width: 350px;
     }
     
-    /* Testimonials */
+    .cd, .cd2 {
+        max-width: 350px;
+    }
+    
     .comment, .coment, .coent, .cont, .cot, .ct, .t, .c, .o {
-        width: 23%;
+        width: 22%;
+    }
+    
+    .hero-illustration {
+        width: 550px;
+        height: 500px;
+    }
+    
+    .container1 {
+        width: 550px;
+        height: 470px;
     }
 }
 
-/* 4K and larger screens */
-@media (min-width: 1600px) {
-    .header-container {
-        max-width: 1400px;
+@media (min-width: 1200px) {
+    .hero-section {
+        padding: 100px 0;
     }
     
     .hero-title {
-        font-size: 4.5rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 1.6rem;
-    }
-    
-    /* Animation section */
-    .card0 {
-        max-width: 1200px;
-        height: 350px;
+        font-size: 4rem;
     }
     
     .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8 {
         font-size: 3.5rem;
     }
     
-    .Animated {
-        width: 350px;
+    .card0 {
+        max-width: 900px;
+        height: 350px;
     }
 }
 
-/* Special cases for very small devices */
-@media (max-width: 400px) {
+@media (max-width: 375px) {
     .logo-and-name {
-        font-size: 0.8rem;
-        padding: 5px 8px;
-    }
-    
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #fffc35;
-        flex-direction: column;
-        align-items: center;
-        padding: 15px 0;
-        display: none;
-    }
-    
-    .nav-item {
-        padding: 10px 0;
-    }
-    
-    .mobile-menu-toggle {
-        display: block;
-    }
-    
-    .apply-button {
-        padding: 8px 15px;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        padding: 6px 10px;
     }
     
     .hero-title {
-        font-size: 1.8rem;
-    }
-    
-    .hero-subtitle {
-        font-size: 0.9rem;
+        font-size: 2rem;
     }
     
     .hero-button {
@@ -991,105 +919,32 @@ body {
     }
     
     .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8 {
-        font-size: 1.2rem;
-        padding: 8px;
+        font-size: 1.5rem;
+        padding: 10px;
     }
     
     .Animated {
-        width: 100px;
-    }
-    
-    /* Stack all cards on very small screens */
-    .card1, .card2, .card3, .card4,
-    .crd1, .crd2, .crd3,
-    .comment, .coment, .coent, .cont, .cot, .ct, .t, .c, .o {
-        width: 100%;
-        margin: 10px 0;
+        width: 120px;
     }
 }
 
 /* Landscape orientation adjustments */
 @media (orientation: landscape) and (max-height: 500px) {
-    .header-container {
-        padding: 8px 15px;
-    }
-    
     .hero-section {
         padding: 30px 0;
     }
     
     .hero-title {
-        font-size: 1.8rem;
-        margin-bottom: 10px;
+        font-size: 2rem;
     }
     
     .hero-subtitle {
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin-bottom: 15px;
     }
     
     .hero-button {
-        padding: 8px 16px;
-        font-size: 0.8rem;
-    }
-    
-    /* Reduce spacing in landscape */
-    .haha, .hehe, .smart2, .testimonials-title {
-        margin: 15px 0;
-    }
-    
-    .section1, .section2 {
-        gap: 10px;
-    }
-    
-    .card0 {
-        height: 180px;
-    }
-    
-    .h1, .h2, .h3, .h4, .h5, .h6, .h7, .h8 {
-        font-size: 1.2rem;
-        padding: 6px;
-    }
-    
-    .Animated {
-        width: 80px;
-    }
-}
-
-/* High pixel density displays */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    /* Use higher resolution images if available */
-    .Animated img {
-        content: url('assets/rocket@2x.png');
-    }
-    
-    #one, #two, #three, #for {
-        /* Use higher resolution images if available */
-    }
-}
-
-/* Print styles */
-@media print {
-    .header, .footer-transition, .mobile-menu-toggle {
-        display: none;
-    }
-    
-    body {
-        background-color: white;
-        color: black;
-        font-size: 12pt;
-    }
-    
-    .hero-section, .card, .section1, .section2, .bg, .smrt, .smrtss, .css {
-        page-break-inside: avoid;
-    }
-    
-    a {
-        text-decoration: none;
-        color: black;
-    }
-    
-    .hero-button, .apply-button, .apply-btn {
-        display: none;
+        padding: 8px 20px;
+        font-size: 0.9rem;
     }
 }
